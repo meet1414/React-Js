@@ -1,106 +1,55 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+body{
+  background-color: black;
 }
-.container{
-  max-width: 1235px;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin: 0 auto;
+.counter-container {
+  width: 350px;
+  height: 225px;
+  margin: 40px auto;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.card{
-  width: 300px;
-  height: 250px;
-  background-color: #fff;
-  border-radius: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+.counter-display {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
 }
-.card-header img {
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.increment-button, .decrement-button, .reset-button {
   width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto;
-  margin-top: 20px;
-}
-.card-body {
-  text-align: center;
-  margin-top: 20px;
-}
-.card-body h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-.card-body p {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-.card-footer {
-  text-align: center;
-  margin-top: 20px;
-}
-.btn{
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
+  height: 40px;
+  font-size: 18px;
+  font-weight: bold;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.btn:hover {
-  background-color: #0056b3;
-}
-.row{
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-.col-1 {
-  width: 8.33%
+  cursor: pointer; 
+  margin-right:15px;
 }
 
-.col-2 {
-  width: 16.66%
+.increment-button {
+  background-color: #4CAF50;
+  color: #fff;
 }
 
-.col-3 {
-  width: 25%
+.decrement-button {
+  background-color: #FF9800;
+  color: #fff;
 }
 
-.col-4 {
-  width: 33.33%
+.reset-button {
+  background-color: #03A9F4;
+  color: #fff;
 }
 
-.col-5 {
-  width: 41.66%
-}
-
-.col-6 {
-  width: 50%
-}
-
-.col-7 {
-  width: 58.33%
-}
-
-.col-8 {
-  width: 66.66%
-}
-
-.col-9 {
-  width: 75%
-}
-
-.col-10 {
-  width: 83.33%
-}
-
-.col-11 {
-  width: 91.66%
-}
-
-.col-12 {
-  width: 100%
+.increment-button:hover, .decrement-button:hover, .reset-button:hover {
+  opacity: 0.8;
 }
