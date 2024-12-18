@@ -1,0 +1,30 @@
+/* App.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa; /* Light gray background */
+  margin: 0;
+  padding: 0;
+}
+
+.container .mt-4{
+  margin:100px 500px 100px 500px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+  color: #343a40; /* Dark gray */
+}
+
+button {
+  margin: 5px;
+}
+
+.alert {
+  margin-bottom: 20px;
+}
+body{
+  background-color:#ded9b9;
+}
