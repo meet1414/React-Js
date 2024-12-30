@@ -1,15 +1,14 @@
-import React from 'react';
-import './App.css';
-import PatientForm from './Components/PatientForm';
+import React from "react";
+import PatientList from "./components/PatientList";
+import "./App.css";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <h1>Patient Record Management System</h1>
-      <PatientForm />
+    <div className="app">
+      <h1>Patient Management System</h1>
+      <PatientList />
     </div>
   );
-}
+};
 
 export default App;
-    

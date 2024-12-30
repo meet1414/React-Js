@@ -1,0 +1,21 @@
+.patient-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    color: black;
+  }
+  
+  .patient-card h2 {
+    font-size: 18px;
+    margin: 0 0 10px;
+  }
+  
+  .patient-card p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
