@@ -1,0 +1,18 @@
+.app-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color:#000;
+}
+.app-container h1{
+  color: #fff;
+}
+.note-item h2,p{
+  color: #fff;
+}
+.note-item span{
+  color:#fff;
+}
+body{
+  background-color: rgb(240, 232, 232);
+}

@@ -1,0 +1,22 @@
+.note-list {
+  margin-top: 20px;
+}
+
+.note-list-controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.note-list-controls input {
+  flex: 1;
+  padding: 10px;
+}
+
+.note-list button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}

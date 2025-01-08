@@ -1,0 +1,39 @@
+.note-item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.note-item input{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 8px;
+  width: 250px;
+  text-align: center;
+}
+.note-item textarea{
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  height: 150px;
+  width: 600px;
+  text-align: center;
+}
+
+
+.note-item h2 {
+  margin: 0 0 10px;
+}
+
+.note-item button {
+  background-color: #dc3545;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.note-item button:nth-child(2) {
+  background-color: #28a745;
+}
