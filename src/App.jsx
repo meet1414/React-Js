@@ -1,28 +1,21 @@
-import { useContext } from "react";
-import "./App.scss";
-import "bootstrap/dist/js/bootstrap.bundle";
-import CustomRoutes from "./pages/Routes";
-import 'react-toastify/dist/ReactToastify.css'
-import { ToastContainer } from 'react-toastify';
-import { AuthenticatedContext } from "./Redux/AuthenticatedContext";
-import ScreenLoader from "./components/ScreenLoader"
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Route, Routes } from 'react-router';
+import Header from './Components/Header';
+import Add from './Components/Add';
+import Home from './Components/Home';
+import Edit from './Components/Edit';
 
 function App() {
-
-  const { isAuthenticated, isLoader } = useContext(AuthenticatedContext)
-
-  // console.log(isAuthenticated)
-  // console.log(isLoader)
-
   return (
     <>
-      {isLoader
-        ? <ScreenLoader />
-        : <CustomRoutes />
-      }
-      <ToastContainer />
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/add" element={<Add />} />
+        <Route path='/edit/:id' element={<Edit />} />
+      </Routes>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
