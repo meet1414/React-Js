@@ -4,15 +4,20 @@ import Header from './component/Header';
 import Add from './component/Add';
 import Home from './component/Home';
 import Edit from './component/Edit';
+import Login from "./component/Login/Login";
+import Signup from "./component/Signup/Signup";
 
 function App() {
   return (
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
+      {/* <Route element={<Login />} path="/" /> */}
+        <Route path="/" element={<Login />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/add" element={<Add />} />
         <Route path='/edit/:id' element={<Edit />} />
+        <Route path="/signup"  element={<Signup />}/>
       </Routes>
     </>
   )

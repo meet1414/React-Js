@@ -1,9 +1,9 @@
-body {
+/* body {
     font-family: Arial, sans-serif;
     background-image: url("https://img.freepik.com/free-vector/restaurant-mural-wallpaper_23-2148703851.jpg");
     margin: 0;
     padding: 0;
-}
+} */
 
 .containers {
     max-width: 400px;
@@ -111,9 +111,9 @@ button:hover {
     max-width: 221px;
     width: 100%;
 }
-.header{
+/* .header{
     background-image: url("https://static.vecteezy.com/system/resources/thumbnails/013/488/415/small_2x/tasty-fast-food-hand-drawn-for-cute-background-illustration-design-wallpaper-in-pattern-hand-drawn-style-vector.jpg");
-}
+} */
 .logo-img{
     background-color: black;
 }

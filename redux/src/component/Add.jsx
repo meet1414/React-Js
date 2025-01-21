@@ -30,7 +30,7 @@ const Add = () => {
 
     useEffect(() => {
         if (isCreated) {
-            navigate('/');
+            navigate('/home');
         }
     }, [isCreated])
 

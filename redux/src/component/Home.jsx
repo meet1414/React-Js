@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Button, Container, Row } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { deletedata, getdataAsync, serching } from '../servis/action/userAction';
-import { data, useNavigate } from 'react-router';
+import {  useNavigate } from 'react-router';
 import './style.css'
 const Home = () => {
     const navigate = useNavigate()
@@ -21,7 +21,7 @@ const Home = () => {
     }
     useEffect(() => {
         dispatch(getdataAsync())
-    }, [])
+    },[dispatch])
     return (
         <>
            
@@ -44,7 +44,7 @@ const Home = () => {
                                                 <p className='mx-1 m-0'>{value.name}</p>
                                             </div>
                                             <div className="d-flex align-items-center my-3" >
-                                                <h5 className="card-title m-0">Recipe M.R.P :-</h5>
+                                                <h5 className="card-title m-0">Recipe :- </h5>
                                                 <p className='mx-1 m-0'>${value.amount}</p>
                                             </div>
                                             <div className="d-flex align-items-center my-3" >

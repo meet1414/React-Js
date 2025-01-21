@@ -25,7 +25,7 @@ const Edit = () => {
         e.preventDefault()
         // console.log(input)
         dispatch(edituser(input))
-        navigate("/")
+        navigate("home")
     }
     useEffect(() => {
         dispatch(setdata(id))
